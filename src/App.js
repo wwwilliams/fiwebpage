@@ -1,18 +1,34 @@
 import './App.css';
 import Header from './Components/Header/Header';
-import ClearDivider from './Components/ClearDivider/ClearDivider';
-import Image from './Components/Image/Image';
-import Divider from './Components/Divider/Divider';
+
+import { Route, Switch } from 'react-router-dom';
+import Homepage from './Components/Homepage/Homepage';
+import Bullets from './Components/Bullets/Bullets';
+
+
 function App() {
     return (
-      <div>
-            <Header />
-            <ClearDivider />
-            <Image />
+        <div>
+            <Switch>
+                <Route path="/CFI">
+                    <Header />
+                    <Bullets />
+                </Route>
+                <Route path="/CFII">
+                    <Header />
+                    <Bullets />
+                </Route>
+                <Route path="/MEI">
+                    <Header />
+                    <Bullets />
+                </Route>
+                <Homepage />
 
-            <Divider />
-        </div>
+                    </Switch>
+                    </div>
+
+
   );
-}
+};
 
 export default App;

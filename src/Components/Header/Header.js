@@ -1,4 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+
 
 
 const Header = () => {
@@ -6,18 +9,19 @@ const Header = () => {
     return (
             <div class="ui inverted menu">
             <div class="header item">
-                CFI Page
+                <Link to={'/'}> CFI Page
+                    </Link>
   </div>
 
-            <a class="item">
+            <Link to={'/CFI'} className="item">
                 CFI
-  </a>
-            <a class="item">
+  </Link>
+            <Link to={'/CFII'} className="item">
                 CFII
-  </a>
-            <a class="item">
+  </Link>
+            <Link to={'/MEI'} className="item">
                 MEI
-  </a>
+  </Link>
             <div class="right menu">
                 <div class="item">
                     <div class="ui button">Sign up</div>

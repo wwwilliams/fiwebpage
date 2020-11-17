@@ -7,9 +7,26 @@ const Divider = () => {
             <div class="ui divider"></div>
             <p>insert text here</p>
             <h4 class="ui horizontal divider">
-                Horizontal
-  </h4>
-        </div>
+                Was this webpage helpful?  </h4>
+
+
+
+
+            <div class="ui form">
+                
+                <div class="field">
+                    <label>Suggestion Box</label>
+                    <textarea rows="2"></textarea>
+                </div>
+            </div>
+
+
+
+
+
+
+
+                </div>
     );
 };
 
